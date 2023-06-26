@@ -1,0 +1,5 @@
+{
+    "require": {
+        "spekulatius/phpscraper": "^2.0"
+    }
+}
