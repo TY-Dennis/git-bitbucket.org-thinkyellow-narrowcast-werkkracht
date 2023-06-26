@@ -5,14 +5,10 @@
 		<title>Werkkracht - Loesje.nl</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="../loesje/dist/reveal.css">
+		<link rel="stylesheet" href="../loesje/dist/theme/simple.css" id="theme">
         
-        <style>
-            .slides img{
-                height:70vh;
-            }
-        </style>
+       
 	</head>
 	<body>
         
@@ -33,37 +29,37 @@ $web->go('https://www.loesje.nl/posters');
 			<div class="slides">
 				<section data-transition="fade-in slide-out" data-background-color="#ffe182">
 					
-                    <?php echo '<img src="'.$web->images[1].'" />';
+                    <?php echo '<img src="'.$web->images[1].'" class="stretch" />';
                     
                     ?>
 				</section>
                 <section data-transition="fade-in slide-out" data-background-color="#bfdaa2">
 					
-                    <?php echo '<img src="'.$web->images[2].'" />';
+                    <?php echo '<img src="'.$web->images[2].'" class="stretch" />';
                     
                     ?>
 				</section>
                 <section data-transition="fade-in slide-out" data-background-color="#F6B1A1">
 					
-                    <?php echo '<img src="'.$web->images[3].'" />';
+                    <?php echo '<img src="'.$web->images[3].'" class="stretch" />';
                     
                     ?>
 				</section>
                 <section data-transition="fade-in slide-out" data-background-color="#ffe182">
 					
-                    <?php echo '<img src="'.$web->images[4].'" />';
+                    <?php echo '<img src="'.$web->images[4].'" class="stretch" />';
                     
                     ?>
 				</section>
                 <section data-transition="fade-in slide-out" data-background-color="#bfdaa2">
 					
-                    <?php echo '<img src="'.$web->images[5].'" />';
+                    <?php echo '<img src="'.$web->images[5].'" class="stretch" />';
                     
                     ?>
 				</section>
                 <section data-transition="fade-in slide-out" data-background-color="#F6B1A1">
 					
-                    <?php echo '<img src="'.$web->images[6].'" />';
+                    <?php echo '<img src="'.$web->images[6].'" class="stretch" />';
                     
                     ?>
 				</section>
@@ -71,8 +67,8 @@ $web->go('https://www.loesje.nl/posters');
 
 		</div>
 
-		<script src="../dist/reveal.js"></script>
-		<script src="../plugin/highlight/highlight.js"></script>
+		<script src="../loesje/dist/reveal.js"></script>
+		<script src="../loesje/plugin/highlight/highlight.js"></script>
 		<script>
 			Reveal.initialize({
 				center: true,
@@ -82,6 +78,7 @@ $web->go('https://www.loesje.nl/posters');
                 controls: false,
 				// plugins: [ RevealHighlight ]
 			});
+          Reveal.shuffle();
 		</script>
 
 	</body>
